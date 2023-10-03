@@ -1,0 +1,164 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 5rem;
+    gap: 4rem;
+
+    .feature_head {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .feature_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                font-family: var(--sora-font);
+            }
+
+            p {
+                color: #616163;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 151.3%;
+                font-family: var(--work-font);
+                margin-top: -1.5rem;
+            }
+        }
+    }
+
+    .feature_content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+
+        .feature_check_list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: .5rem;
+            width: 50%;
+
+            .feature_check {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1rem;
+                overflow: hidden;
+
+                .check_text {
+                    position: relative;
+                    top: -2.3rem;
+
+                    h4 {
+                        font-size: 1.75rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        color: #1b233d;
+                        font-family: var(--inter-font);
+                    }
+
+                    p {
+                        margin-top: -1.5rem;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 151.3%;
+                        font-family: var(--work-font);
+                        color: #616163;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .feature_video{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .feature{
+        gap: 2rem;
+
+        .feature_content{
+            flex-direction: column;
+
+            .feature_check_list, .feature_video{
+                width: 100%;
+            }
+
+            .feature_check_list{
+                align-items: center;
+                justify-content: center;
+                
+                .feature_check{
+                    width: 100%;
+                    justify-content: center;
+                    // align-items: center;
+                    flex-direction: column;
+
+                    .check_text{
+                        top: -1.8rem;
+                        width: 100%;
+                        // text-align: center;
+                        
+                        h4,p{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .feature_video{
+                img{
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .feature{
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feature{
+        margin-top: 0;
+        padding: 0 1rem;
+        .feature_content{
+            .feature_video{
+                img{
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

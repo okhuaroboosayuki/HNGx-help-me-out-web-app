@@ -1,0 +1,117 @@
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5rem;
+
+    h3 {
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #141414;
+        font-family: var(--sora-font);
+    }
+
+    .how_works {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5.1875rem;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.75rem;
+
+            .number {
+                background-color: var(--btn-color);
+                border-radius: 50%;
+                padding: 0.875rem 1.625rem;
+                color: #fff;
+                text-align: center;
+                font-family: var(--inter-font);
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .text {
+                h4 {
+                    color: #1b233d;
+                    text-align: center;
+                    font-family: var(--inter-font);
+                    font-size: 1.75rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #616163;
+                    text-align: center;
+                    font-family: var(--work-font);
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 151.3%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .works{
+        .how_works{
+            gap: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .works{
+        .how_works{
+            flex-direction: column;
+
+            .card{
+                gap: .7rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 438px) {
+    .works{
+        padding: 2rem;
+        
+        h3{
+            font-size: 2rem;
+        }
+
+        .how_works{
+            width: 100%;
+            
+            .card{
+                width: 100%;
+                .text{
+                    h4{
+                        font-size: 1.5rem;
+                        width: 100%;
+                    }
+                }
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sora&family=Work+Sans&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --sora-font: 'Sora', sans-serif;
+  --work-font: 'Work Sans', sans-serif;
+  --inter-font: 'Inter', sans-serif;
+  --btn-color: #120B48;
+  --btn-hover-color: #645baf;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
